@@ -4,7 +4,7 @@ import requests
 from threading import Thread
 from playwright.sync_api import sync_playwright
 import os
-WEBHOOK = os.environ["https://discord.com/api/webhooks/1486039811587309638/hLiI_t-MFTcAOEuYfBxZxza_0Jz-WFkubbig-iflHMnUV3t_Sbye5OnYTyQuuvuFGd9z"]
+WEBHOOK = os.environ["WEHBOOK"]
 
 PRODUCTS = [
     {
