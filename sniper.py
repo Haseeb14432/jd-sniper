@@ -4,6 +4,8 @@ import requests
 from threading import Thread
 from playwright.sync_api import sync_playwright
 import os
+import datetime
+
 WEBHOOK = os.environ["WEHBOOK"]
 
 PRODUCTS = [
@@ -18,6 +20,16 @@ PRODUCTS = [
 ]
 
 seen = set()
+
+try:
+    requests.post(
+        WEBHOOK, 
+        json={"content": f"🚀 JD Sniper is now ACTIVE! Monitoring {len(PRODUCTS)} products. Time: {datetime.datetime.now()}"}, 
+        timeout=10
+    )
+except:
+    print("Failed to send active message")
+
 
 def send(msg):
     try:
