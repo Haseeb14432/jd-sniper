@@ -1,14 +1,16 @@
 import time
 import random
 import os
+os.environ["WEBHOOK"] = "https://discord.com/api/webhooks/1486039811587309638/hLiI_t-MFTcAOEuYfBxZxza_0Jz-WFkubbig-iflHMnUV3t_Sbye5OnYTyQuuvuFGd9z"
+os.environ["LOG_WEBHOOK"] = "https://discord.com/api/webhooks/1486048915898892440/VXET1HDlbW0wm68hc-urA_Pr_1zn3XGyjkdyzCdBGvm1_l1mTtdj_vyX9W6kc12VRtec"
 import requests
 from threading import Thread
 from playwright.sync_api import sync_playwright
 from datetime import datetime
 
 # Load webhooks from GitHub Secrets
-WEBHOOK = os.environ["WEBHOOK"]           # main restock notifications
-LOG_WEBHOOK = os.environ.get("LOG_WEBHOOK")  # optional live log channel
+WEBHOOK = os.environ["WEBHOOK"]          # main restock notifications
+LOG_WEBHOOK = os.environ.get("LOG_WEBHOOK") = " # optional live log channel
 
 # Products to monitor
 PRODUCTS = [
