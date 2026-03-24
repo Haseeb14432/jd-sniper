@@ -10,7 +10,7 @@ from datetime import datetime
 
 # Load webhooks from GitHub Secrets
 WEBHOOK = os.environ["WEBHOOK"]          # main restock notifications
-LOG_WEBHOOK = os.environ.get("LOG_WEBHOOK") = " # optional live log channel
+LOG_WEBHOOK = os.environ.get("LOG_WEBHOOK") # optional live log channel
 
 # Products to monitor
 PRODUCTS = [
