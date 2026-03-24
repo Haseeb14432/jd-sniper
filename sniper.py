@@ -7,7 +7,7 @@ from playwright.sync_api import sync_playwright
 from datetime import datetime
 
 # Load webhooks from GitHub Secrets
-WEBHOOK = os.environ["WEBHOOK"]           # main restock notifications
+WEBHOOK = os.environ["WEHBOOK"]           # main restock notifications
 LOG_WEBHOOK = os.environ.get("LOG_WEBHOOK")  # optional live log channel
 
 # Products to monitor
